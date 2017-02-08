@@ -180,8 +180,37 @@ textarea {
 
 /* ===== BASE STYLES ===== */
 html {
-background: url(../images/back.jpg)no-repeat center center fixed;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+background: url(../images/thearter.jpg)no-repeat center center fixed;
+background-size: cover;
 }
+
+h1 {
+  font-size: 1.5em;
+  color: 	#FA8072;
+}
+
+h2 {
+  padding-top: 80px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.31; 
+  padding-bottom: 0.94em; 
+  color: 	#FA8072;
+}
+p,
+label {
+  font-size: 1em;
+  color: 	#FA8072;
+  line-height: 1.31;
+}
+footer {
+  
+  position:fixed;
+    bottom:0;
+}
+
 
 /* ===== LAYOUT STYLES ===== */
 
