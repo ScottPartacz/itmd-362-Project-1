@@ -179,7 +179,9 @@ textarea {
 /* end normalize.css form styles */
 
 /* ===== BASE STYLES ===== */
-
+html {
+background: url(../images/back.jpg)no-repeat center center fixed;
+}
 
 /* ===== LAYOUT STYLES ===== */
 
