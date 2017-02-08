@@ -4,16 +4,15 @@ jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-  $('#email').on('keyup', function(){
-    var currentvalue = $(this).val();
-    var vaildpattern = $(this).attr('pattern');
-    console.log(currentvalue,vaildpattern);
-    if(currentvalue.match(vaildpattern)){
+  $('#email').on('keyup focus blur', function() {
+    var currentValue = $(this).val();
+    var validPattern = $(this).attr('pattern');
+    console.log(currentValue,validPattern);
+    if(currentValue.match(validPattern)) {
       $('#submit').addClass('active');
-    }
-    else {
+    } else {
       $('#submit').removeClass('active');
     }
   });
-  
+
 });
