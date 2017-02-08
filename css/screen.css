@@ -227,14 +227,20 @@ footer {
 
 
 /* ===== STATE STYLES ===== */
+
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -10000px;
+}
+
+.hasjs input[type="submit"].active {
+  position: static;
+}
+
 @media screen and (min-width: 1080px) {
   
   h1{
     padding-top: 1.5em;
   }
   
-}
-.hasjs input[type="submit"] {
-  position: absolute;
-  left: -10000px;
 }
