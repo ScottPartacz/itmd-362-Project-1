@@ -234,3 +234,7 @@ footer {
   }
   
 }
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -10000px;
+}
