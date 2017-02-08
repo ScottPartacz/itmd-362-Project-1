@@ -205,12 +205,20 @@ label {
   color: 	#FA8072;
   line-height: 1.31;
 }
+
+input {
+  font-size: .75em;
+}
+
 footer {
   
   position:fixed;
     bottom:0;
 }
 
+.button:hover {
+  background-color: #FA8072;
+}
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -219,3 +227,10 @@ footer {
 
 
 /* ===== STATE STYLES ===== */
+@media screen and (min-width: 1080px) {
+  
+  h1{
+    padding-top: 1.5em;
+  }
+  
+}
