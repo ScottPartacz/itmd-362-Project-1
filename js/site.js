@@ -1,9 +1,17 @@
 $.noConflict();
 (function($) {
-  $('html').removeClass('nojs');
-  $('html').addClass('hasjs');
-  
   $(document).ready(function(){
+    $('#button').attr('disabled', 'disabled');
+    $('#email').on('keyup focus blur', function() {
+    var currentValue = $(this).val();
+    var validPattern = $(this).attr('pattern');
+    if(currentValue.match(validPattern)) {
+      $('#button').removeAttr('disabled');
+    }
+    else{
+      $('#button').attr('disabled', 'disabled');
+    }
+    });
     $('#movies').on('submit', function(e) { 
       e.preventDefault(); 
       window.location.reload();
@@ -11,15 +19,5 @@ $.noConflict();
       $("#email").val("");
       $("#fav").val("");
       }); 
-      $('#email').on('keyup focus blur', function() {
-       var currentValue = $(this).val();
-       var validPattern = $(this).attr("pattern");
-       if (currentValue.match(validPattern)) {
-          $("#submit").addClass("active");
-        } 
-        else {
-          $("#submit").removeClass("active");
-        }
-      });
      });
 })(jQuery);
