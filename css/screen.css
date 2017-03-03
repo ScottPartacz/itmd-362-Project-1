@@ -182,7 +182,7 @@ textarea {
 html {
   font-family: "Nunito", sans-serif;
   text-align: center;
-  background-color: #353839
+  background-color: #353839;
 }
 
 h1 {
@@ -190,14 +190,10 @@ h1 {
   color: 	#FA8072;
 }
 
-figure {
-  padding-top: 0.65em;
-  
-}
-
 img {
   display: block;
-  max-width: 100%;
+  max-width: 92%;
+  padding: 0.65em;
 }
 
 h2 {
