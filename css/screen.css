@@ -216,6 +216,8 @@ label {
   line-height: 1.31;
 }
 
+/* ===== LAYOUT STYLES ===== */
+
 input {
   font-size: 0.75em;
 }
@@ -228,10 +230,6 @@ footer {
   position: fixed;
   bottom: 0;
 }
-
-
-/* ===== LAYOUT STYLES ===== */
-
 
 /* ===== MODULAR STYLES ===== */
 
@@ -250,7 +248,7 @@ footer {
 
   h2,
   label {
-    font-size: 1.25em;
+    font-size: 1.125em;
     color: #FA8072;
     line-height: 1.31em;
   }
@@ -265,13 +263,13 @@ footer {
 
   h2,
   label {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #FA8072;
     line-height: 1.31em;
   }
 
   #fav {
-    padding-right: 7.8em;
+    padding-right: 7.2em;
   }
 
   footer {
